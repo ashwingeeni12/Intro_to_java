@@ -1,6 +1,8 @@
 class Main {
   public static void main(String[] args) {
-    System.out.print("Hello world!\n\n");
-    System.out.println("Ok");
-  System.out.println("Hello world!");}
+    System.out.print("  *\n");
+    System.out.print(" * *\n");
+    System.out.print("* * * \n");
+    System.out.print(" * *\n");
+  System.out.print("  * \n");}
 }
