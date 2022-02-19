@@ -1,9 +1,11 @@
 class Main {
   public static void main(String[] args) {
-int a = 10;
-int b = 11;
-int sum;
-sum = a+b;
-System.out.println(""+ sum); 
+char a_letter = 'A';
+char sLetter = 's';
+char hLetter = 'h';
+char wLetter = 'w'; 
+char iLetter = 'i';
+char nLetter = 'n';
+System.out.println("" + a_letter+sLetter+hLetter+wLetter+iLetter+nLetter);
   }   
 }
