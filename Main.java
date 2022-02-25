@@ -1,6 +1,6 @@
 class Main {
   public static void main(String[] args) {
-int iUno = 2000000000;
-System.out.println("" + iUno);
+long lUno = 1000000000000L;
+System.out.println("" + lUno);
   }   
 }
