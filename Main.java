@@ -1,8 +1,8 @@
 class Main {
   public static void main(String[] args) {
-int varOne = 7;
-int varTwo = varOne++; 
-System.out.println("" + varOne);
-System.out.println("" + varTwo);
-  }   
+int org_num = 1232;
+int incre = ++org_num;
+int incre = long; 
+System.out.println(incre);
+  }    
 }
