@@ -1,7 +1,7 @@
 class Main {
   public static void main(String[] args) {
-boolean var1 = false;
-boolean var2 = false; 
-System.out.println("" + (var1||var2));
+int var1 = 4;
+int var2 = 2; 
+System.out.println("" + (var1|var2));
   }   
 }
