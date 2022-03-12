@@ -1,7 +1,8 @@
 class Main {
   public static void main(String[] args) {
-int var1 = 4;
-int var2 = 2; 
-System.out.println("" + (var1|var2));
+    int age = 20;
+    if (age >= 18){
+      System.out.println("This person is eligible for voting."); 
+    }
   }   
 }
