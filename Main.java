@@ -1,9 +1,14 @@
-
+import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
-    int[] int_array = {3, 6, 7, 4, 10, 8, 20};
-        for (int i = int_array.length - 1; i >= 0; i--){
-          System.out.println(int_array[i]);
-        }
+    int count = 0;
+    Scanner inputString = new Scanner(System.in);  
+    String UserInput = inputString.nextLine();
+    for(int i = 0; i < UserInput.length(); i++){
+      if(UserInput.charAt(i) == 'a'|| UserInput.charAt(i) == 'e' || UserInput.charAt(i) == 'i' || UserInput.charAt(i) == 'o' || UserInput.charAt(i) == 'u' || UserInput.charAt(i) == 'A' || UserInput.charAt(i) == 'E' || UserInput.charAt(i) == 'I' || UserInput.charAt(i) == 'O' || UserInput.charAt(i) == 'U'){
+        count++;
+      }      
     }
+    System.out.println(count);
+  }
 }
