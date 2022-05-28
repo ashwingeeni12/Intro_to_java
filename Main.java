@@ -1,13 +1,23 @@
-import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    int int_input = scanner.nextInt();
-    int sum = 0; 
-    while(int_input > 0){
-      sum += int_input%10;
-      int_input = int_input/10;
-    }
-    System.out.println(sum);
+    System.out.println(addition(10.2, 2.5)); 
+  }
+  public static int multiply(int num_, int num__){
+    return num_ * num__;
+  }
+  public static int addition(int num_, int num__){
+    return num_ + num__;
+  }
+  public static int division(int num_, int num__){
+    return num_ / num__;
+  }
+  public static int subtaction(int num_, int num__){
+    return num_ - num__;
+  }
+  public static double addition(double dec1, double dec2){
+    return dec1 + dec2;
+  }
+  public static int addition(int num_, int num__, int num___){
+    return num_ + num__ + num___;
   }
 }
