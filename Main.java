@@ -1,10 +1,10 @@
 class Main {
   public static void main(String[] args) {
-    int Box_1 = new BoxVol();
-    int Box_2 = BoxVol(9);
-    int Box_3 = BoxVol(4, 6, 9);
-    System.out.println(Box_1);
-    System.out.println(Box_2);
-    System.out.println(Box_3);
+    Box Box_1 = new Box();
+    Box Box_2 = new Box(3);
+    Box Box_3 = new Box(3, 6, 9);
+    System.out.println("The volume of Box 1 is " + Box_1.volume());
+    System.out.println("The volume of Box 2 is " + Box_2.volume());
+    System.out.println("The volume of Box 3 is " + Box_3.volume());
   }
 }

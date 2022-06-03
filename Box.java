@@ -1,16 +1,18 @@
-class Box{
-  int length = 2;
-  int height = 2;
-  int width = 2;
-
-  int BoxVol(){
-    return length*width*height;
-  }
-  int BoxVol(int cuboid){
-    cuboid = length = width = height;
-    return cuboid*cuboid*cuboid; 
-  }
-  int BoxVol(int l, int h, int w){
-    return l*h*w;
-  }
+class Box
+{
+    int width, height, length;
+    Box(int w, int h, int l){
+        width = w;
+        height = h;
+        length = l;
+    }
+    Box(){
+        width = height = length = 1;
+    }
+    Box(int cuboid){
+        width = height = length = cuboid;
+    }
+    int volume(){
+        return width * height * length;
+    }
 }
