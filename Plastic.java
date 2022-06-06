@@ -1,10 +1,11 @@
 class Plastic extends Box{
-  int weight; 
-  String color = "transparent"; 
-
-  Plastic(){
+  int weight;  
+  Plastic() { 
+    System.out.println("Constructor called"); 
+  }
+  Plastic(int lbs){
     super();
-    weight = 3; 
+    weight = lbs; 
   }
   Plastic(int lbs, int cube){
     super(cube);
@@ -13,5 +14,8 @@ class Plastic extends Box{
   Plastic(int lbs, int le, int wi, int he){
     super(wi, he, le); 
     weight = lbs; 
+  }
+  double PlasticVolume(){
+    return ((width*height*length)/weight); 
   }
 }

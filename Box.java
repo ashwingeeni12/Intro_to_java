@@ -12,7 +12,7 @@ class Box
     Box(int cuboid){
         width = height = length = cuboid;
     }
-    int volume(){
+    double volume(){
         return width * height * length;
     }
 }
