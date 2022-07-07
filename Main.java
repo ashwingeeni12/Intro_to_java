@@ -1,49 +1,28 @@
 import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
-    System.out.println("Enter page from 1 - 37");
-    Scanner input_Page = new Scanner(System.in);
-    int input = input_Page.nextInt();
-    int Chapter1 = 1;
-    int Chapter2 = 15;
-    int Chapter3 = 37;
-    System.out.println(Chapt(Chapter1, Chapter2, Chapter3, input));
-  }
-  public static String Chapt(int Chapter1, int Chapter2, int Chapter3, int input){
-    int out = 0;
-    int[] array1 = new int[2];
-    int[] array2 = new int[2];
-    if(Chapter1 <= input && input < Chapter2){
-      out = input - Chapter1;
-      array1[0] = out;
-      out = Chapter2 - input;
-      array1[1] = out;
-      if(array1[0] >= array1[1]){
-        out = array1[0];
-        return "Chapter 2";
-      }
-      if(array1[0] < array1[1]){
-        out = array1[1];
-        return "Chapter 1";
-      }
+    System.out.println("Enter 5 numbers");
+    Scanner input_Num1 = new Scanner(System.in);
+    int num1 = input_Num1.nextInt();
+    Scanner input_Num2 = new Scanner(System.in);
+    int num2 = input_Num2.nextInt();
+    Scanner input_Num3 = new Scanner(System.in);
+    int num3 = input_Num3.nextInt();
+    Scanner input_Num4 = new Scanner(System.in);
+    int num4 = input_Num4.nextInt();
+    Scanner input_Num5 = new Scanner(System.in);
+    int num5 = input_Num5.nextInt();
+    int[] array1 = new int[5];
+    array1[0] = num1;
+    array1[1] = num2;
+    array1[2] = num3;
+    array1[3] = num4;
+    array1[4] = num5;
+    if(array1[1] % array1[0] == 0 && array1[2] % array1[1] == 0 && array1[3] % array1[2] == 0 && array1[4] % array1[3] == 0){
+      System.out.println("This is a factor chain");
     }
-    if(Chapter2 <= input && input < Chapter3){
-      out = input - Chapter2;
-      array2[0] = out;
-      out = Chapter3 - input;
-      array2[1] = out;
-      if(array2[0] >= array2[1]){
-        out = array2[0];
-        return "Chapter 3";
-      }
-      if(array2[0] < array2[1]){
-        out = array2[1];
-        return "Chapter 2";
-      }
+    else{
+      System.out.println("This is not a factor chain");
     }
-    if(Chapter3 == input){
-      return "Chapter 3";
-    }
-    return "Out of Bounds"; 
   }
 }
