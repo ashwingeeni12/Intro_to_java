@@ -1,26 +1,43 @@
 import java.util.Scanner;
-class Main{
+class Main {
   public static void main(String[] args) {
-    System.out.println("Player One chose Rock, Paper, or Scissors.");
-    Scanner inputOne = new Scanner(System.in);
-    String input1 = inputOne.nextLine();
-    System.out.println("Player Two chose Rock, Paper, or Scissors.");
-    Scanner inputTwo = new Scanner(System.in);
-    String input2 = inputTwo.nextLine();
+    System.out.println("Programmer 1 Wage");
+    Scanner first = new Scanner(System.in);
+    int p1 = first.nextInt();
+    System.out.println("Programmer 2 Wage");
+    Scanner second = new Scanner(System.in);
+    int p2 = first.nextInt();
+    System.out.println("Programmer 3 Wage");
+    Scanner third = new Scanner(System.in);
+    int p3 = third.nextInt();
 
-    System.out.println(winner(input1, input2));
-  }
-  public static String winner(String input1, String input2){
-    String output = "test";
-    if(input1.equals(input2)){
-      output = "TIE";
-    } 
-    else if(input1.equals("Rock") && input2.equals("Scissors") || input1.equals("Scissors") && input2.equals("Paper") || input1.equals("Paper") && input2.equals("Scissors")){
-      output = "Player One Wins";
-    } 
-    else if(input2.equals("Rock") && input1.equals("Scissors") || input2.equals("Scissors") && input1.equals("Paper") || input2.equals("Paper") && input1.equals("Scissors")){
-      output = "Player 2 Wins";
+    int large = 0;
+    int small = 0;
+    
+    if (p1 >= p2 && p1 >= p3) {
+      large = p1;
+      if (p2>=p3){
+        small = p3;
+      }else{
+        small = p2;
+      }
     }
-  return output;
-  }
+    if (p2 >= p1 && p2 >= p3) {
+      large = p2;
+      if (p1>=p3){
+        small = p3;
+      }else{
+        small = p1;
+      }
+    }
+    if (p3 >= p2 && p3 >= p1) {
+      large = p3;
+      if (p2 >= p1){
+        small = p1;
+      }else{
+        small = p2;
+      }
+    }
+  System.out.println(large - small);
+  } 
 }
