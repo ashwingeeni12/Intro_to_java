@@ -2,16 +2,10 @@
   "files": {
     "Main.java": [
       {
-        "id": "8442ee81-07e4-4b4d-b704-a90e0c08c2fb",
-        "line": 1,
-        "version": 32875,
-        "index": 0
-      },
-      {
-        "id": "8bf0e411-6a0a-48a9-8d2e-96c3b2c22007",
-        "line": 5,
-        "version": 32875,
-        "index": 150
+        "id": "d164e25f-4d0d-4189-9f2a-bc0133066fae",
+        "line": 17,
+        "version": 39255,
+        "index": 522
       }
     ]
   }
